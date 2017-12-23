@@ -5,7 +5,7 @@ node() {
   stage('Building the application') {
     sh(
       script: '''
-        build.sh
+        ./build.sh
       '''
     )
   }
@@ -13,7 +13,7 @@ node() {
     ansiColor('xterm') {
       sh(
         script: '''
-        tests.sh
+        ./tests.sh
         '''
       )
     }
@@ -22,7 +22,7 @@ node() {
     ansiColor('xterm') {
       sh(
         script: '''
-        deploy.sh
+        ./deploy.sh
         '''
       )
     }
