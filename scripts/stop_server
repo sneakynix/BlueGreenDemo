@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cd /home/node/app
+pm2 info index
+if [[ $? -eq 0 ]]; then
+    pm2 stop index
+fi
+
