@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-cd /home/node/
+yum -y install nodejs
+adduser node
+cd /home/node
 mkdir app
 git clone https://github.com/gallantra/BlueGreenDemo.git app
 cd app/
