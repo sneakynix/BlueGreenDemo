@@ -3,7 +3,7 @@ var app = express();
 
 app.get('/', function (req, res) {
 
-  hello = "Hello World from green version"
+  hello = "Hello World from green version. This is replacement for previous production"
   res.send(hello);
 });
 
