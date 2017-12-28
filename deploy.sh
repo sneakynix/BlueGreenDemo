@@ -9,4 +9,5 @@ aws deploy create-deployment \
   --deployment-config-name CodeDeployDefault.OneAtATime \
   --deployment-group-name example-group \
   --description "My GitHub BlueGreen deployment demo" \
-  --github-location repository=gallantra/BlueGreenDemo,commitId=$(git rev-parse --short HEAD)
+  --github-location repository=gallantra/BlueGreenDemo,commitId=$(git rev-parse --short HEAD) \
+  --region us-east-1
