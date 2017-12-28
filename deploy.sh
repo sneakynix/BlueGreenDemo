@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 echo "Deploying to AWS CodeDeploy"
 
 aws deploy create-deployment \
