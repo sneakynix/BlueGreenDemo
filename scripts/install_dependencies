@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+# Node.js installation
+curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum -y install nodejs
 adduser node
+
+# Getting the application
 cd /home/node
 mkdir app
 git clone https://github.com/gallantra/BlueGreenDemo.git app
