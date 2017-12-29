@@ -2,7 +2,7 @@
 
 echo "Building the application"
 
-ln -s {$env.WORKSPACE} ~/rpmbuild
+ln -s $WORKSPACE ~/rpmbuild -force
 cd ~/rpmbuild
 npm install --save-dev speculate
 npm run spec
