@@ -1,6 +1,4 @@
 node() {
-  // Wipe the workspace so we are building completely clean
-  deleteDir()
   checkout scm
   stage('Building the application') {
     echo 'Executing script'
@@ -18,4 +16,6 @@ node() {
         '''
       )
   }
+  // Wipe the workspace so we are building completely clean
+  deleteDir()
 }
