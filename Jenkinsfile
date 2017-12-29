@@ -1,3 +1,6 @@
+pipeline
+{
+  agent any
 node() {
   // Wipe the workspace so we are building completely clean
   deleteDir()
@@ -16,4 +19,5 @@ node() {
         '''
       )
   }
+}
 }
