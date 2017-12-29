@@ -18,7 +18,7 @@ cd ..
 # create an RPM using fpm.
 #   JOB_NAME     = jenkins job name
 #   BUILD_NUMBER = jenkins auto incremented build number
-fpm \
+/usr/local/bin/fpm \
     -s dir -t rpm \
     --name "$JOB_NAME" \
     --iteration "$BUILD_NUMBER" \
