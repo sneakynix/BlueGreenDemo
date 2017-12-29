@@ -10,21 +10,10 @@ node() {
     )
   }
   stage('Performing tests') {
-    ansiColor('xterm') {
       sh(
         script: '''
         ./tests.sh
         '''
       )
-    }
-  }
-  stage('CodeDeploy') {
-    ansiColor('xterm') {
-      sh(
-        script: '''
-        ./deploy.sh
-        '''
-      )
-    }
   }
 }
