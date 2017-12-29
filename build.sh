@@ -18,7 +18,7 @@ cd ..
 # create an RPM using fpm.
 #   JOB_NAME     = jenkins job name
 #   BUILD_NUMBER = jenkins auto incremented build number
-/usr/local/bin/fpm \
+fpm \
     -s dir -t rpm \
     --name "$JOB_NAME" \
     --iteration "$BUILD_NUMBER" \
@@ -31,7 +31,7 @@ cd ..
     "$JOB_NAME=/opt/"
 
 # make a copy of the rpm with generic name (without version or build).
-cp *.rpm "$JOB_NAME.rpm"
+#cp *.rpm "$JOB_NAME.rpm"
 
 # mv both the rpm and genericly named rpm to the workdir so jenkins can archive it.
-mv *.rpm "$JOB_NAME"
+#mv *.rpm "$JOB_NAME"
