@@ -5,7 +5,7 @@ node() {
   stage('Building the application') {
     sh(
       script: '''
-        ./fpm-pack.sh
+        ./build.sh
       '''
     )
   }
