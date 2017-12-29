@@ -16,6 +16,4 @@ node() {
         '''
       )
   }
-  // Wipe the workspace so we are building completely clean
-  deleteDir()
 }
