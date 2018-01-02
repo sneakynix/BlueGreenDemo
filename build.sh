@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-echo "Building the application"
-echo $WORKSPACE
+echo "[INFO] Building the application"
+
+echo "[INFO] Creating RPM package"
 
 ln -s $WORKSPACE ~/rpmbuild --force
 cd ~/rpmbuild
@@ -9,8 +10,10 @@ npm install --save express
 npm install --save-dev speculate
 npm run spec
 /usr/bin/rpmbuild -bb ~/rpmbuild/SPECS/BlueGreenDemoApp.spec
+ls -l ~/rpmbuild/RPMS/x86_64
 
+echo "[INFO] Creating DEB package"
 cd $WORKSPACE
 node-deb -- index.js app/
 
-ls -l ~/rpmbuild/RPMS/x86_64
+
