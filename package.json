@@ -6,7 +6,8 @@
     "version": "1.0.1",
     "entrypoints": {
       "daemon": "index.js"
-    },
+    }
+  },
   "description": "BlueGreenDeploymentDemo",
   "main": "index.js",
   "scripts": {
