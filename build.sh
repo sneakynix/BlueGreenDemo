@@ -14,6 +14,6 @@ ls -l ~/rpmbuild/RPMS/x86_64
 
 echo "[INFO] Creating DEB package"
 cd $WORKSPACE
-node-deb -- index.js app/
+node-deb -- index.js
 
 
