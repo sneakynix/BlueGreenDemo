@@ -16,6 +16,13 @@ node() {
         '''
       )
   }
+  stage('Uploading to repo') {
+      sh(
+        script: '''
+        deb-s3 upload --bucket spinnaker-jenkins-poc-debrepo --arch all --codename trusty --preserve-versions true *.deb
+        '''
+      )
+  }
   stage ('Archive build output') {
     
     // Archive the build output artifacts.
