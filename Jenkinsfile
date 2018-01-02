@@ -19,6 +19,6 @@ node() {
   stage ('Archive build output') {
     
     // Archive the build output artifacts.
-    archiveArtifacts artifacts: '*.deb', '*.rpm',
+    archiveArtifacts artifacts: '*.deb', '*.rpm'
   }
 }
