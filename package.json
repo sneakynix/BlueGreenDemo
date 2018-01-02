@@ -1,6 +1,6 @@
 {
   "name": "BlueGreenDemoApp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "node_deb": {
     "init": "upstart",
     "maintainer": "spinnaker poc",
@@ -10,7 +10,7 @@
       "upstart_conf": "templates/upstart.conf"
     },
     "entrypoints": {
-      "daemon": "app.js"
+      "daemon": "index.js"
     }
   },
   "description": "BlueGreenDeploymentDemo",
