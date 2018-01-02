@@ -1,11 +1,10 @@
 {
   "name": "BlueGreenDemoApp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "node_deb": {
-    "init": "systemd",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "entrypoints": {
-      "daemon": "nodejs index.js"
+      "daemon": "index.js"
     }
   },
   "description": "BlueGreenDeploymentDemo",
