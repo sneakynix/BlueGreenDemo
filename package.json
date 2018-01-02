@@ -2,13 +2,22 @@
   "name": "BlueGreenDemoApp",
   "version": "1.0.2",
   "node_deb": {
-    "init": "upstart"
+    "init": "upstart",
+    "maintainer": "spinnaker poc",
+    "user": "nodejs-user",
+    "group": "nodejs-user",
+    "templates": {
+      "upstart_conf": "templates/upstart.conf"
+    },
+    "entrypoints": {
+      "daemon": "app.js"
+    }
   },
   "description": "BlueGreenDeploymentDemo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodejs index.js",
+    "start": "/usr/bin/nodejs index.js",
     "spec": "speculate"
   },
   "repository": {
