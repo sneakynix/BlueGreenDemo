@@ -2,10 +2,7 @@
   "name": "BlueGreenDemoApp",
   "version": "1.0.2",
   "node_deb": {
-    "version": "1.0.2",
-    "entrypoints": {
-      "daemon": "index.js"
-    }
+    "init": "upstart"
   },
   "description": "BlueGreenDeploymentDemo",
   "main": "index.js",
