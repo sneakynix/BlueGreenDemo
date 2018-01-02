@@ -5,7 +5,7 @@
     "init": "systemd",
     "version": "1.0.1",
     "entrypoints": {
-      "daemon": "index.js"
+      "daemon": "nodejs index.js"
     }
   },
   "description": "BlueGreenDeploymentDemo",
