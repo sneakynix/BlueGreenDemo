@@ -19,7 +19,7 @@ node() {
   stage('Uploading to repo') {
       sh(
         script: '''
-        deb-s3 upload --bucket spinnaker-jenkins-poc-debrepo --arch all --codename trusty --preserve-versions true *.deb
+        /usr/local/bin/deb-s3 upload --bucket spinnaker-jenkins-poc-debrepo --arch all --codename trusty --preserve-versions true *.deb
         '''
       )
   }
