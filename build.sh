@@ -11,6 +11,6 @@ npm run spec
 /usr/bin/rpmbuild -bb ~/rpmbuild/SPECS/BlueGreenDemoApp.spec
 
 cd $WORKSPACE
-node-deb -- index.js /app
+node-deb -- index.js /
 
 ls -l ~/rpmbuild/RPMS/x86_64
