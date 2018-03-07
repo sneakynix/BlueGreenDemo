@@ -27,7 +27,7 @@ node() {
     
     // Archive the build output artifacts.
     archiveArtifacts(
-      artifacts: '*.deb'
+      artifacts: '*.deb','*.rpm'
       )
   }
 }
