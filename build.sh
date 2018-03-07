@@ -3,7 +3,7 @@
 echo "[INFO] Building the application"
 
 echo "[INFO] bumping version"
-npm version "1.0.4-$BUILD_NUMBER"
+npm version "1.0.$BUILD_NUMBER"
 
 echo "[INFO] Creating RPM package"
 
